@@ -4,47 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الساعة الذكية الأقوى - عرض حصري</title>
+    <title>الخزائن الحديثة - خصم 50% لفترة محدودة</title>
     <style>
         * {margin:0;padding:0;box-sizing:border-box}
         body {font-family:'Tahoma',Arial,sans-serif;background:#000;color:#fff;padding-bottom:100px}
 .container {max-width:500px;margin:0 auto;background:linear-gradient(145deg,#1a1a1a,#2d2d2d);padding:30px 20px}
-.badge {background:#ff3b30;display:inline-block;padding:8px 20px;border-radius:20px;font-weight:bold;margin-bottom:15px;animation:pulse 2s infinite}
+.badge {background:#ff3b30;display:inline-block;padding:10px 25px;border-radius:25px;font-weight:bold;margin-bottom:15px;animation:pulse 2s infinite;font-size:18px}
         @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
-        h1 {font-size:32px;margin:15px 0;line-height:1.4;color:#00ff88;text-align:center}
-        h2 {font-size:22px;margin:25px 0 15px;color:#00ff88;text-align:center}
+        h1 {font-size:34px;margin:15px 0;line-height:1.3;color:#00ff88;text-align:center;font-weight:900}
+        h2 {font-size:24px;margin:25px 0 15px;color:#00ff88;text-align:center}
 
-/* معرض الصور */
 .gallery {margin:25px 0}
-.gallery img {width:100%;border-radius:20px;margin:12px 0;border:3px solid #00ff88;box-shadow:0 8px 25px rgba(0,255,136,0.3)}
-.gallery-title {background:rgba(0,255,136,0.1);padding:15px;border-radius:12px;margin:15px 0;text-align:center;font-size:18px;border:1px solid #00ff88}
+.gallery img {width:100%;border-radius:20px;margin:12px 0;border:3px solid #00ff88;box-shadow:0 8px 25px rgba(0,255,136,0.4)}
 
-.offer-box {background:rgba(255,59,48,0.15);padding:25px;border-radius:15px;margin:20px 0;text-align:center;border:2px dashed #ff3b30}
-.offer-text {color:#00ff88;font-weight:900;font-size:28px;margin:10px 0}
-.features {margin:25px 0;text-align:right}
-.features li {list-style:none;margin:12px 0;font-size:18px;padding-right:30px;position:relative}
-.features li:before {content:"✓";position:absolute;right:0;color:#00ff88;font-weight:bold;font-size:22px}
+.discount-badge {background:linear-gradient(45deg,#ff3b30,#ff0000);padding:20px;border-radius:15px;margin:20px 0;text-align:center;box-shadow:0 8px 30px rgba(255,59,48,0.5)}
+.discount-text {color:#fff;font-weight:900;font-size:42px;margin:5px 0}
+.discount-sub {color:#fff;font-size:20px;opacity:0.95}
+
+.price-box {background:rgba(0,255,136,0.1);padding:25px;border-radius:15px;margin:20px 0;text-align:center;border:2px solid #00ff88}
+.old-price {text-decoration:line-through;opacity:0.6;font-size:24px;margin-left:10px;color:#ff3b30}
+.new-price {color:#00ff88;font-weight:900;font-size:50px;display:block;margin:10px 0}
+.save {color:#ff3b30;font-size:22px;margin-top:5px;font-weight:bold}
+
+.features {margin:30px 0;text-align:right}
+.features li {list-style:none;margin:14px 0;font-size:18px;padding-right:35px;position:relative;line-height:1.5}
+.features li:before {content:"✓";position:absolute;right:0;color:#00ff88;font-weight:bold;font-size:24px}
  
- /* الأزرار */
-.buttons {margin:25px 0}
-.btn {padding:25px 20px;font-size:24px;font-weight:900;border:none;border-radius:60px;cursor:pointer;display:block;text-decoration:none;width:100%;text-align:center;margin:15px 0}
-.btn-call {background:linear-gradient(45deg,#007AFF,#0051D5);color:#fff;box-shadow:0 10px 30px rgba(0,122,255,0.5);font-size:28px}
-.btn-whatsapp {background:linear-gradient(45deg,#25D366,#128C7E);color:#fff;box-shadow:0 10px 30px rgba(37,211,102,0.4)}
+.number-box {background:rgba(0,122,255,0.2);padding:25px;border-radius:15px;margin:25px 0;text-align:center;border:2px solid #007AFF}
+.number-text {font-size:38px;font-weight:900;color:#007AFF;letter-spacing:2px}
+
+.buttons {margin:30px 0}
+.btn {padding:28px 20px;font-size:26px;font-weight:900;border:none;border-radius:60px;cursor:pointer;display:block;text-decoration:none;width:100%;text-align:center;margin:15px 0}
+.btn-call {background:linear-gradient(45deg,#007AFF,#0051D5);color:#fff;box-shadow:0 10px 35px rgba(0,122,255,0.6);font-size:30px}
+.btn-whatsapp {background:linear-gradient(45deg,#25D366,#128C7E);color:#fff;box-shadow:0 10px 35px rgba(37,211,102,0.5)}
 .btn:active{transform:scale(0.95)}
-.number-box {background:rgba(0,122,255,0.2);padding:15px;border-radius:15px;margin:10px 0;text-align:center;border:2px solid #007AFF}
-.number-text {font-size:32px;font-weight:900;color:#007AFF}
  
- /* أزرار عائمة */
-.floating-call {position:fixed;bottom:20px;right:20px;background:#007AFF;color:white;width:70px;height:70px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:35px;box-shadow:0 5px 25px rgba(0,122,255,0.6);z-index:999;animation:bounce 2s infinite;text-decoration:none}
-.floating-whatsapp {position:fixed;bottom:20px;left:20px;background:#25D366;color:white;width:70px;height:70px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:35px;box-shadow:0 5px 25px rgba(37,211,102,0.6);z-index:999;animation:bounce 2s infinite 1s;text-decoration:none}
-        @keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.floating-call {position:fixed;bottom:20px;right:20px;background:#007AFF;color:white;width:75px;height:75px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:38px;box-shadow:0 5px 30px rgba(0,122,255,0.7);z-index:999;animation:bounce 2s infinite;text-decoration:none}
+.floating-whatsapp {position:fixed;bottom:20px;left:20px;background:#25D366;color:white;width:75px;height:75px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:38px;box-shadow:0 5px 30px rgba(37,211,102,0.7);z-index:999;animation:bounce 2s infinite 1s;text-decoration:none}
+        @keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
  
-.benefits {background:rgba(0,255,136,0.1);border:2px solid #00ff88;padding:20px;border-radius:15px;margin:30px 0}
-.benefit-item {background:rgba(0,0,0,0.3);padding:15px;border-radius:10px;margin:10px 0;text-align:right;font-size:16px}
+.benefits {background:rgba(0,255,136,0.1);border:2px solid #00ff88;padding:25px;border-radius:15px;margin:30px 0}
+.benefit-item {background:rgba(0,0,0,0.4);padding:18px;border-radius:12px;margin:12px 0;text-align:right;font-size:17px;border:1px solid rgba(0,255,136,0.3)}
 .footer {background:#0a0a0a;padding:30px 20px;text-align:center;margin-top:40px;border-top:2px solid #00ff88}
 .footer a {color:#00ff88;text-decoration:none;margin:0 10px}
-.trust {margin:25px 0;display:flex;justify-content:space-around;font-size:15px;opacity:0.9}
-.countdown {background:#ff3b30;padding:15px;border-radius:10px;margin:15px 0;font-weight:bold;text-align:center;font-size:20px}
+.trust {margin:25px 0;display:flex;justify-content:space-around;font-size:16px;opacity:0.9;font-weight:bold}
+.countdown {background:#ff3b30;padding:18px;border-radius:12px;margin:20px 0;font-weight:bold;text-align:center;font-size:22px;box-shadow:0 5px 20px rgba(255,59,48,0.4)}
     </style>
 
     <!-- TikTok Pixel Code Start -->
@@ -61,76 +65,79 @@
 </head>
 <body>
     <div class="container">
-        <div class="badge">🔥 عرض اليوم فقط</div>
-        <h1>الساعة الذكية الأقوى<br>بأفضل سعر</h1>
+        <div class="badge">🔥 عرض حصري</div>
+        <h1>الخزائن الحديثة<br>خصم 50% لفترة محدودة</h1>
         
-        <!-- معرض الصور -->
-        <div class="gallery-title">✨ شوف التصاميم والجودة بنفسك</div>
         <div class="gallery">
-            <img src="watch1.jpg" alt="الساعة الذكية - تصميم 1">
-            <img src="watch2.jpg" alt="الساعة الذكية - تصميم 2">
-            <img src="watch3.jpg" alt="الساعة الذكية - تصميم 3">
-            <img src="watch4.jpg" alt="الساعة الذكية - تصميم 4">
+            <img src="dressing1.jpg" alt="تسريحة مودرن بإضاءة LED">
+            <img src="dressing2.jpg" alt="دولاب ملابس سحاب فاخر">
+            <img src="dressing3.jpg" alt="غرفة ملابس كاملة بتصميم عصري">
+            <img src="dressing4.jpg" alt="دولاب مرايات كامل للمساحات الواسعة">
         </div>
         
-        <div class="offer-box">
-            <div style="font-size:20px;opacity:0.9">لفترة محدودة</div>
-            <div class="offer-text">خصم خاص + هدية مجانية</div>
-            <div style="font-size:18px;margin-top:10px">اتصل الآن لمعرفة السعر</div>
+        <div class="discount-badge">
+            <div class="discount-text">خصم 50%</div>
+            <div class="discount-sub">على جميع التصاميم</div>
         </div>
 
-        <div class="countdown">⏰ العرض ينتهي خلال: 48 ساعة</div>
+        <div class="price-box">
+            <div style="font-size:18px;opacity:0.8;margin-bottom:10px">السعر قبل الخصم</div>
+            <span class="old-price">5,998 ريال</span>
+            <div style="font-size:18px;margin-top:15px">السعر بعد الخصم</div>
+            <span class="new-price">2,999 ريال</span>
+            <div class="save">وفرت 2,999 ريال 💰</div>
+        </div>
+
+        <div class="countdown">⏰ العرض ساري لـ 48 ساعة فقط</div>
 
         <ul class="features">
-            <li>شاشة AMOLED ملونة عالية الدقة</li>
-            <li>مقاومة للماء حتى 50 متر IP68</li>
-            <li>بطارية 10 أيام استخدام متواصل</li>
-            <li>قياس نبض القلب والأكسجين 24/7</li>
-            <li>تتبع 100+ رياضة مختلفة</li>
-            <li>مكالمات بلوتوث + إشعارات فورية</li>
-            <li>شحن مجاني لكل المناطق</li>
-            <li>الدفع عند الاستلام</li>
+            <li>تصاميم عصرية مخصصة حسب مساحة غرفتك</li>
+            <li>خامات تركية عالية الجودة MDF مقاوم للرطوبة</li>
+            <li>إضاءة LED مخفية احترافية تضيف فخامة</li>
+            <li>اكسسوارات إيطالية أصلية بنظام Soft Close</li>
+            <li>ضمان شامل 5 سنوات على الخشب والاكسسوارات</li>
+            <li>معاينة مجانية ورفع مقاسات دقيق</li>
+            <li>تصميم 3D احترافي تشوف خزانتك قبل التنفيذ</li>
+            <li>تركيب على أيدي فنيين متخصصين</li>
+            <li>خدمة ما بعد البيع وصيانة دورية</li>
         </ul>
 
-        <!-- الرقم واضح -->
         <div class="number-box">
-            <div style="font-size:18px;margin-bottom:5px">للطلب والاستفسار</div>
+            <div style="font-size:20px;margin-bottom:8px;opacity:0.9">للحجز والاستفسار</div>
             <div class="number-text">0510804566</div>
         </div>
 
-        <!-- زر الاتصال أول وأكبر -->
         <div class="buttons">
             <a href="tel:0510804566" class="btn btn-call" onclick="ttq.track('Contact')">
-                📞 اتصل مباشر الآن
+                📞 اتصل الآن للمعاينة المجانية
             </a>
-            <a href="https://wa.me/966510804566?text=أبغى%20أعرف%20سعر%20الساعة%20الذكية" class="btn btn-whatsapp" onclick="ttq.track('Contact')">
-                💬 واتساب مباشر
+            <a href="https://wa.me/966510804566?text=أبغى%20استفيد%20من%20عرض%2050%25%20للخزائن%20الحديثة" class="btn btn-whatsapp" onclick="ttq.track('Contact')">
+                💬 واتساب مباشر - احجز موعدك
             </a>
         </div>
         
         <div class="trust">
-            <span>✓ ضمان سنة</span>
-            <span>✓ استرجاع 14 يوم</span>
-            <span>✓ شحن سريع</span>
+            <span>✓ ضمان 5 سنوات</span>
+            <span>✓ معاينة مجانية</span>
+            <span>✓ تصميم 3D</span>
         </div>
         
         <div class="benefits">
-            <h2>🎁 مميزات العرض</h2>
-            <div class="benefit-item"><strong>شحن مجاني سريع</strong><br>يوصل خلال 2-4 أيام عمل</div>
-            <div class="benefit-item"><strong>هدية مجانية</strong><br>سير سيليكون إضافي مع كل طلب</div>
-            <div class="benefit-item"><strong>ضمان سنة كاملة</strong><br>استبدال فوري لو في أي مشكلة</div>
-            <div class="benefit-item"><strong>الدفع عند الاستلام</strong><br>ما تدفع ريال إلا لما تستلم</div>
+            <h2>🎁 مميزات التعامل معنا</h2>
+            <div class="benefit-item"><strong>معاينة مجانية شاملة</strong><br>فريق متخصص يجيك للموقع يرفع المقاسات ويقدم استشارة مجانية بدون أي التزام</div>
+            <div class="benefit-item"><strong>تصميم 3D واقعي قبل التنفيذ</strong><br>تشوف خزانتك بالألوان والتفاصيل والإضاءة قبل ما نبدأ التنفيذ - تعدل براحتك</div>
+            <div class="benefit-item"><strong>ضمان ذهبي 5 سنوات</strong><br>ضمان شامل على الخشب ضد التقوس والاكسسوارات ضد الأعطال والتركيب</div>
+            <div class="benefit-item"><strong>أسعار المصنع مباشرة</strong><br>نوفر عليك عمولة المعارض والمحلات - جودة أعلى بسعر أقل</div>
         </div>
         
-        <p style="margin-top:20px;font-size:18px;opacity:0.95;text-align:center;font-weight:bold;color:#ff3b30">الكمية محدودة - اتصل الحين!</p>
+        <p style="margin-top:25px;font-size:20px;opacity:0.95;text-align:center;font-weight:bold;color:#ff3b30">مواعيد المعاينة محدودة - احجز مكانك الآن!</p>
     </div>
 
-    <!-- زرين عائمين -->
     <a href="tel:0510804566" class="floating-call" onclick="ttq.track('Contact')">📞</a>
-    <a href="https://wa.me/966510804566?text=أبغى%20استفسر%20عن%20الساعة" class="floating-whatsapp" onclick="ttq.track('Contact')">💬</a>
+    <a href="https://wa.me/966510804566?text=أبغى%20استفيد%20من%20عرض%2050%25%20للخزائن%20الحديثة" class="floating-whatsapp" onclick="ttq.track('Contact')">💬</a>
 
     <div class="footer">
-        <p>© 2026 جميع الحقوق محفوظة</p>
+        <p>© 2026 جميع الحقوق محفوظة - الخزائن الحديثة</p>
         <div style="margin:15px 0">
             <a href="#privacy">سياسة الخصوصية</a> | 
             <a href="#terms">الشروط والأحكام</a> | 
