@@ -78,12 +78,17 @@
             <img src="photo5047428584193205034.jpeg" alt="تسريحة بإضاءة ليد من الخزانة الحديثة" loading="lazy">
         </div>
 
-        <a href="tel:966510804566" class="btn btn-call" onclick="ttq.track('Contact',{content_type:'call'})">
-            📞 اتصل الآن: 0510804566
-        </a>
-        <a href="https://wa.me/966510804566?text=أبغى+عرض+الخزانة+الحديثة+50%25" class="btn btn-wa" onclick="ttq.track('Contact',{content_type:'whatsapp'})">
-            💬 واتساب الخزانة الحديثة
-        </a>
+      <!-- زر اتصال مع حدث تيك توك -->
+<a id="call-btn" href="tel:+9665510884566" class="btn btn-call" 
+   onclick="ttq.track('Contact', {content_name: 'اتصال هاتفي', value: 150, currency: 'SAR'});">
+   📞 اتصل الآن: 05510884566
+</a>
+
+<!-- زر واتساب مع حدث تيك توك -->
+<a id="whatsapp-btn" href="https://wa.me/9665510884566?text=أريد%20خدمة%20صيانة%20الخزانة" class="btn btn-whatsapp"
+   onclick="ttq.track('ClickButton', {content_name: 'طلب واتساب', value: 150, currency: 'SAR'});">
+   📱 واتساب للخزانة الحديثة
+</a>
 
         <h2>ليش الخزانة الحديثة؟</h2>
         <ul class="features">
