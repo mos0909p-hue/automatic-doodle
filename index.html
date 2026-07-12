@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الساعة الذكية - عرض خاص</title>
+    <title>الساعة الذكية الأقوى - عرض حصري</title>
     <style>
         * {margin:0;padding:0;box-sizing:border-box}
         body {font-family:'Tahoma',Arial,sans-serif;background:#000;color:#fff;padding-bottom:100px}
@@ -13,40 +13,26 @@
         @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
         h1 {font-size:32px;margin:15px 0;line-height:1.4;color:#00ff88;text-align:center}
         h2 {font-size:22px;margin:25px 0 15px;color:#00ff88;text-align:center}
-.product-img {width:100%;border-radius:20px;margin:20px 0;border:3px solid #00ff88}
+
+/* معرض الصور */
+.gallery {margin:25px 0}
+.gallery img {width:100%;border-radius:20px;margin:12px 0;border:3px solid #00ff88;box-shadow:0 8px 25px rgba(0,255,136,0.3)}
+.gallery-title {background:rgba(0,255,136,0.1);padding:15px;border-radius:12px;margin:15px 0;text-align:center;font-size:18px;border:1px solid #00ff88}
+
 .offer-box {background:rgba(255,59,48,0.15);padding:25px;border-radius:15px;margin:20px 0;text-align:center;border:2px dashed #ff3b30}
 .offer-text {color:#00ff88;font-weight:900;font-size:28px;margin:10px 0}
 .features {margin:25px 0;text-align:right}
 .features li {list-style:none;margin:12px 0;font-size:18px;padding-right:30px;position:relative}
 .features li:before {content:"✓";position:absolute;right:0;color:#00ff88;font-weight:bold;font-size:22px}
  
- /* الأزرار الرئيسية */
+ /* الأزرار */
 .buttons {margin:25px 0}
-.btn {
-            padding:25px 20px;
-            font-size:24px;
-            font-weight:900;
-            border:none;
-            border-radius:60px;
-            cursor:pointer;
-            display:block;
-            text-decoration:none;
-            width:100%;
-            text-align:center;
-            margin:15px 0;
-        }
-.btn-call {
-            background:linear-gradient(45deg,#007AFF,#0051D5);
-            color:#fff;
-            box-shadow:0 10px 30px rgba(0,122,255,0.5);
-            font-size:28px;
-        }
-.btn-whatsapp {
-            background:linear-gradient(45deg,#25D366,#128C7E);
-            color:#fff;
-            box-shadow:0 10px 30px rgba(37,211,102,0.4);
-        }
+.btn {padding:25px 20px;font-size:24px;font-weight:900;border:none;border-radius:60px;cursor:pointer;display:block;text-decoration:none;width:100%;text-align:center;margin:15px 0}
+.btn-call {background:linear-gradient(45deg,#007AFF,#0051D5);color:#fff;box-shadow:0 10px 30px rgba(0,122,255,0.5);font-size:28px}
+.btn-whatsapp {background:linear-gradient(45deg,#25D366,#128C7E);color:#fff;box-shadow:0 10px 30px rgba(37,211,102,0.4)}
 .btn:active{transform:scale(0.95)}
+.number-box {background:rgba(0,122,255,0.2);padding:15px;border-radius:15px;margin:10px 0;text-align:center;border:2px solid #007AFF}
+.number-text {font-size:32px;font-weight:900;color:#007AFF}
  
  /* أزرار عائمة */
 .floating-call {position:fixed;bottom:20px;right:20px;background:#007AFF;color:white;width:70px;height:70px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:35px;box-shadow:0 5px 25px rgba(0,122,255,0.6);z-index:999;animation:bounce 2s infinite;text-decoration:none}
@@ -75,11 +61,17 @@
 </head>
 <body>
     <div class="container">
-        <div class="badge">🔥 عرض حصري</div>
+        <div class="badge">🔥 عرض اليوم فقط</div>
         <h1>الساعة الذكية الأقوى<br>بأفضل سعر</h1>
         
-        <!-- غير رابط الصورة هنا -->
-        <img src="https://via.placeholder.com/500x500/00ff88/000?text=حط+صورتك+هنا" alt="الساعة الذكية" class="product-img">
+        <!-- معرض الصور -->
+        <div class="gallery-title">✨ شوف التصاميم والجودة بنفسك</div>
+        <div class="gallery">
+            <img src="watch1.jpg" alt="الساعة الذكية - تصميم 1">
+            <img src="watch2.jpg" alt="الساعة الذكية - تصميم 2">
+            <img src="watch3.jpg" alt="الساعة الذكية - تصميم 3">
+            <img src="watch4.jpg" alt="الساعة الذكية - تصميم 4">
+        </div>
         
         <div class="offer-box">
             <div style="font-size:20px;opacity:0.9">لفترة محدودة</div>
@@ -100,14 +92,19 @@
             <li>الدفع عند الاستلام</li>
         </ul>
 
+        <!-- الرقم واضح -->
+        <div class="number-box">
+            <div style="font-size:18px;margin-bottom:5px">للطلب والاستفسار</div>
+            <div class="number-text">0510804566</div>
+        </div>
+
         <!-- زر الاتصال أول وأكبر -->
         <div class="buttons">
             <a href="tel:0510804566" class="btn btn-call" onclick="ttq.track('Contact')">
-                📞 اتصل لمعرفة السعر
+                📞 اتصل مباشر الآن
             </a>
-            <div style="text-align:center;font-size:22px;font-weight:bold;margin:5px 0">0510804566</div>
             <a href="https://wa.me/966510804566?text=أبغى%20أعرف%20سعر%20الساعة%20الذكية" class="btn btn-whatsapp" onclick="ttq.track('Contact')">
-                💬 استفسر واتساب
+                💬 واتساب مباشر
             </a>
         </div>
         
@@ -137,7 +134,7 @@
         <div style="margin:15px 0">
             <a href="#privacy">سياسة الخصوصية</a> | 
             <a href="#terms">الشروط والأحكام</a> | 
-            <a href="tel:0510804566">اتصل بنا</a>
+            <a href="tel:0510804566">0510804566</a>
         </div>
         <p style="font-size:12px;opacity:0.6">نحن نحترم خصوصيتك. لن نشارك بياناتك مع أي طرف ثالث.</p>
     </div>
