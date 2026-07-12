@@ -4,158 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الساعة الذكية - عرض 60% خصم</title>
+    <title>الساعة الذكية - عرض خاص</title>
     <style>
         * {margin:0;padding:0;box-sizing:border-box}
-        body {
-            font-family:'Tahoma',Arial,sans-serif;
-            background:#000;
-            color:#fff;
-            padding-bottom:80px;
-        }
-   .container {
-            max-width:500px;
-            margin:0 auto;
-            background:linear-gradient(145deg,#1a1a1a,#2d2d2d);
-            padding:30px 20px;
-        }
-   .badge {
-            background:#ff3b30;
-            display:inline-block;
-            padding:8px 20px;
-            border-radius:20px;
-            font-weight:bold;
-            margin-bottom:15px;
-            animation:pulse 2s infinite;
-        }
+        body {font-family:'Tahoma',Arial,sans-serif;background:#000;color:#fff;padding-bottom:100px}
+.container {max-width:500px;margin:0 auto;background:linear-gradient(145deg,#1a1a1a,#2d2d2d);padding:30px 20px}
+.badge {background:#ff3b30;display:inline-block;padding:8px 20px;border-radius:20px;font-weight:bold;margin-bottom:15px;animation:pulse 2s infinite}
         @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
-        h1 {font-size:28px;margin:15px 0;line-height:1.4;color:#00ff88;text-align:center}
+        h1 {font-size:32px;margin:15px 0;line-height:1.4;color:#00ff88;text-align:center}
         h2 {font-size:22px;margin:25px 0 15px;color:#00ff88;text-align:center}
-   .product-img {
-            width:100%;
-            border-radius:20px;
-            margin:20px 0;
-            border:3px solid #00ff88;
-        }
-   .price-box {
-            background:rgba(0,255,136,0.1);
-            padding:20px;
-            border-radius:15px;
-            margin:20px 0;
-            text-align:center;
-            border:1px solid #00ff88;
-        }
-   .old-price {
-            text-decoration:line-through;
-            opacity:0.6;
-            font-size:20px;
-            margin-left:10px;
-        }
-   .new-price {
-            color:#00ff88;
-            font-weight:bold;
-            font-size:42px;
-        }
-   .save {color:#ff3b30;font-size:18px;margin-top:5px}
-   .features {margin:25px 0;text-align:right}
-   .features li {
-            list-style:none;
-            margin:12px 0;
-            font-size:17px;
-            padding-right:30px;
-            position:relative;
-        }
-   .features li:before {
-            content:"✓";
-            position:absolute;
-            right:0;
-            color:#00ff88;
-            font-weight:bold;
-            font-size:22px;
-        }
-   .btn {
-            background:linear-gradient(45deg,#00ff88,#00d46a);
-            color:#000;
-            padding:20px 40px;
+.product-img {width:100%;border-radius:20px;margin:20px 0;border:3px solid #00ff88}
+.offer-box {background:rgba(255,59,48,0.15);padding:25px;border-radius:15px;margin:20px 0;text-align:center;border:2px dashed #ff3b30}
+.offer-text {color:#00ff88;font-weight:900;font-size:28px;margin:10px 0}
+.features {margin:25px 0;text-align:right}
+.features li {list-style:none;margin:12px 0;font-size:18px;padding-right:30px;position:relative}
+.features li:before {content:"✓";position:absolute;right:0;color:#00ff88;font-weight:bold;font-size:22px}
+ 
+ /* الأزرار الرئيسية */
+.buttons {margin:25px 0}
+.btn {
+            padding:25px 20px;
             font-size:24px;
             font-weight:900;
             border:none;
             border-radius:60px;
             cursor:pointer;
-            margin:15px 0;
             display:block;
             text-decoration:none;
             width:100%;
             text-align:center;
-            box-shadow:0 10px 30px rgba(0,255,136,0.4);
-        }
-   .btn:active{transform:scale(0.95)}
-    
-    /* زر واتساب عائم */
-   .floating-whatsapp {
-            position:fixed;
-            bottom:20px;
-            left:20px;
-            background:#25D366;
-            color:white;
-            width:65px;
-            height:65px;
-            border-radius:50%;
-            display:flex;
-            align-items:center;
-            justify-content:center;
-            font-size:35px;
-            box-shadow:0 5px 20px rgba(37,211,102,0.5);
-            z-index:999;
-            animation:bounce 2s infinite;
-            text-decoration:none;
-        }
-        @keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
-    
-    /* قسم العروض */
-   .offers {
-            background:rgba(255,59,48,0.1);
-            border:2px dashed #ff3b30;
-            padding:20px;
-            border-radius:15px;
-            margin:30px 0;
-        }
-   .offer-item {
-            background:rgba(0,0,0,0.3);
-            padding:15px;
-            border-radius:10px;
-            margin:10px 0;
-            text-align:right;
-        }
-    
-    /* الفوتر */
-   .footer {
-            background:#0a0a0a;
-            padding:30px 20px;
-            text-align:center;
-            margin-top:40px;
-            border-top:2px solid #00ff88;
-        }
-   .footer a {
-            color:#00ff88;
-            text-decoration:none;
-            margin:0 10px;
-        }
-   .trust {
-            margin:25px 0;
-            display:flex;
-            justify-content:space-around;
-            font-size:14px;
-            opacity:0.8;
-        }
-   .countdown {
-            background:#ff3b30;
-            padding:10px;
-            border-radius:10px;
             margin:15px 0;
-            font-weight:bold;
-            text-align:center;
         }
+.btn-call {
+            background:linear-gradient(45deg,#007AFF,#0051D5);
+            color:#fff;
+            box-shadow:0 10px 30px rgba(0,122,255,0.5);
+            font-size:28px;
+        }
+.btn-whatsapp {
+            background:linear-gradient(45deg,#25D366,#128C7E);
+            color:#fff;
+            box-shadow:0 10px 30px rgba(37,211,102,0.4);
+        }
+.btn:active{transform:scale(0.95)}
+ 
+ /* أزرار عائمة */
+.floating-call {position:fixed;bottom:20px;right:20px;background:#007AFF;color:white;width:70px;height:70px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:35px;box-shadow:0 5px 25px rgba(0,122,255,0.6);z-index:999;animation:bounce 2s infinite;text-decoration:none}
+.floating-whatsapp {position:fixed;bottom:20px;left:20px;background:#25D366;color:white;width:70px;height:70px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:35px;box-shadow:0 5px 25px rgba(37,211,102,0.6);z-index:999;animation:bounce 2s infinite 1s;text-decoration:none}
+        @keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+ 
+.benefits {background:rgba(0,255,136,0.1);border:2px solid #00ff88;padding:20px;border-radius:15px;margin:30px 0}
+.benefit-item {background:rgba(0,0,0,0.3);padding:15px;border-radius:10px;margin:10px 0;text-align:right;font-size:16px}
+.footer {background:#0a0a0a;padding:30px 20px;text-align:center;margin-top:40px;border-top:2px solid #00ff88}
+.footer a {color:#00ff88;text-decoration:none;margin:0 10px}
+.trust {margin:25px 0;display:flex;justify-content:space-around;font-size:15px;opacity:0.9}
+.countdown {background:#ff3b30;padding:15px;border-radius:10px;margin:15px 0;font-weight:bold;text-align:center;font-size:20px}
     </style>
 
     <!-- TikTok Pixel Code Start -->
@@ -164,7 +67,6 @@
       w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
     var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
     ;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
-
       ttq.load('D3J0NRJC77U7N8C5V2IG');
       ttq.page();
     }(window, document, 'ttq');
@@ -173,20 +75,19 @@
 </head>
 <body>
     <div class="container">
-        <div class="badge">🔥 عرض اليوم فقط</div>
+        <div class="badge">🔥 عرض حصري</div>
+        <h1>الساعة الذكية الأقوى<br>بأفضل سعر</h1>
         
-        <h1>الساعة الذكية الأقوى<br>بخصم 60%</h1>
+        <!-- غير رابط الصورة هنا -->
+        <img src="https://via.placeholder.com/500x500/00ff88/000?text=حط+صورتك+هنا" alt="الساعة الذكية" class="product-img">
         
-        <!-- غير الرابط ده برابط صورتك -->
-        <img src="https://via.placeholder.com/500x500/00ff88/000?text=صورتك+هنا" alt="الساعة الذكية" class="product-img">
-        
-        <div class="price-box">
-            <span class="old-price">749 ريال</span>
-            <span class="new-price">299 ريال</span>
-            <div class="save">وفرت 450 ريال 💰</div>
+        <div class="offer-box">
+            <div style="font-size:20px;opacity:0.9">لفترة محدودة</div>
+            <div class="offer-text">خصم خاص + هدية مجانية</div>
+            <div style="font-size:18px;margin-top:10px">اتصل الآن لمعرفة السعر</div>
         </div>
 
-        <div class="countdown">⏰ العرض ينتهي خلال: 24 ساعة</div>
+        <div class="countdown">⏰ العرض ينتهي خلال: 48 ساعة</div>
 
         <ul class="features">
             <li>شاشة AMOLED ملونة عالية الدقة</li>
@@ -194,60 +95,51 @@
             <li>بطارية 10 أيام استخدام متواصل</li>
             <li>قياس نبض القلب والأكسجين 24/7</li>
             <li>تتبع 100+ رياضة مختلفة</li>
-            <li>مكالمات بلوتوث + إشعارات</li>
+            <li>مكالمات بلوتوث + إشعارات فورية</li>
             <li>شحن مجاني لكل المناطق</li>
             <li>الدفع عند الاستلام</li>
         </ul>
 
-        <a href="https://wa.me/966510804566?text=أبغى%20أطلب%20الساعة%20الذكية%20بعرض%2060%" class="btn" onclick="ttq.track('Contact')">
-            اطلب الآن عبر واتساب 📲
-        </a>
+        <!-- زر الاتصال أول وأكبر -->
+        <div class="buttons">
+            <a href="tel:0510804566" class="btn btn-call" onclick="ttq.track('Contact')">
+                📞 اتصل لمعرفة السعر
+            </a>
+            <div style="text-align:center;font-size:22px;font-weight:bold;margin:5px 0">0510804566</div>
+            <a href="https://wa.me/966510804566?text=أبغى%20أعرف%20سعر%20الساعة%20الذكية" class="btn btn-whatsapp" onclick="ttq.track('Contact')">
+                💬 استفسر واتساب
+            </a>
+        </div>
         
         <div class="trust">
             <span>✓ ضمان سنة</span>
             <span>✓ استرجاع 14 يوم</span>
             <span>✓ شحن سريع</span>
         </div>
-
-        <!-- قسم العروض الإضافية -->
-        <div class="offers">
-            <h2>🎁 عروض إضافية</h2>
-            <div class="offer-item">
-                <strong>اشتري 2 واحصل على خصم 15%</strong><br>
-                الساعة الثانية بـ 254 ريال فقط
-            </div>
-            <div class="offer-item">
-                <strong>شحن مجاني سريع</strong><br>
-                يوصل خلال 2-4 أيام عمل
-            </div>
-            <div class="offer-item">
-                <strong>هدية مجانية</strong><br>
-                سير سيليكون إضافي مع كل طلب
-            </div>
+        
+        <div class="benefits">
+            <h2>🎁 مميزات العرض</h2>
+            <div class="benefit-item"><strong>شحن مجاني سريع</strong><br>يوصل خلال 2-4 أيام عمل</div>
+            <div class="benefit-item"><strong>هدية مجانية</strong><br>سير سيليكون إضافي مع كل طلب</div>
+            <div class="benefit-item"><strong>ضمان سنة كاملة</strong><br>استبدال فوري لو في أي مشكلة</div>
+            <div class="benefit-item"><strong>الدفع عند الاستلام</strong><br>ما تدفع ريال إلا لما تستلم</div>
         </div>
-
-        <p style="margin-top:20px;font-size:14px;opacity:0.7;text-align:center">متبقي 5 قطع فقط من العرض!</p>
+        
+        <p style="margin-top:20px;font-size:18px;opacity:0.95;text-align:center;font-weight:bold;color:#ff3b30">الكمية محدودة - اتصل الحين!</p>
     </div>
 
-    <!-- زر واتساب عائم -->
-    <a href="https://wa.me/966510804566?text=أبغى%20استفسر%20عن%20الساعة" class="floating-whatsapp" onclick="ttq.track('Contact')">
-        💬
-    </a>
+    <!-- زرين عائمين -->
+    <a href="tel:0510804566" class="floating-call" onclick="ttq.track('Contact')">📞</a>
+    <a href="https://wa.me/966510804566?text=أبغى%20استفسر%20عن%20الساعة" class="floating-whatsapp" onclick="ttq.track('Contact')">💬</a>
 
-    <!-- الفوتر مع سياسة الخصوصية -->
     <div class="footer">
         <p>© 2026 جميع الحقوق محفوظة</p>
         <div style="margin:15px 0">
             <a href="#privacy">سياسة الخصوصية</a> | 
             <a href="#terms">الشروط والأحكام</a> | 
-            <a href="https://wa.me/966510804566">تواصل معنا</a>
+            <a href="tel:0510804566">اتصل بنا</a>
         </div>
-        <p style="font-size:12px;opacity:0.6">
-            نحن نحترم خصوصيتك. لن نشارك بياناتك مع أي طرف ثالث.
-        </p>
+        <p style="font-size:12px;opacity:0.6">نحن نحترم خصوصيتك. لن نشارك بياناتك مع أي طرف ثالث.</p>
     </div>
-
-    <!-- سياسة الخصوصية المختصرة -->
-    <div id="privacy" style="display:none;"></div>
 </body>
 </html>
