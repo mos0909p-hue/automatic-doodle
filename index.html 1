@@ -1,12 +1,13 @@
 
 
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الخزانة الحديثة | خصم 50% + تركيب مجاني الرياض</title>
-    <meta name="description" content="خزائن تفصيل فاخرة بخصم 50% + ضمان 10 سنوات. تصميم 3D مجاني وتركيب خلال 48 ساعة. اتصل 0510804566">
+    <title>الخزانة الحديثة | خصم 50% + تركيب مجاني الرياض 0510804566</title>
+    <meta name="description" content="الخزانة الحديثة - خزائن تفصيل فاخرة بخصم 50% + ضمان 10 سنوات. تصميم 3D مجاني وتركيب خلال 48 ساعة. اتصل 0510804566">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,31 +22,32 @@
         }
         *{margin:0;padding:0;box-sizing:border-box}
         body{font-family:'Cairo',sans-serif;background:var(--dark);color:#fff;padding-bottom:90px}
-    .container{max-width:480px;margin:0 auto;padding:20px}
-    .badge{background:var(--red);display:inline-block;padding:8px 20px;border-radius:50px;font-weight:700;font-size:14px;animation:pulse 2s infinite;margin-bottom:12px}
+   .container{max-width:480px;margin:0 auto;padding:20px}
+   .badge{background:var(--red);display:inline-block;padding:8px 20px;border-radius:50px;font-weight:700;font-size:14px;animation:pulse 2s infinite;margin-bottom:12px}
         @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
         h1{font-size:30px;font-weight:900;line-height:1.2;background:linear-gradient(90deg,#fff,var(--green));-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin:15px 0;text-align:center}
         h2{font-size:22px;font-weight:700;margin:25px 0 15px;color:var(--green);text-align:center}
-    .timer{background:linear-gradient(45deg,#ff3b30,#ff6b6b);padding:16px;border-radius:16px;text-align:center;font-weight:700;font-size:18px;margin:20px 0;box-shadow:0 8px 25px rgba(255,59,48,.4)}
-    .timer #time{font-size:26px;letter-spacing:2px}
-    .gallery{display:grid;gap:12px;margin:20px 0}
-    .gallery img{width:100%;border-radius:16px;border:2px solid var(--green);box-shadow:0 8px 25px rgba(0,255,136,0.25)}
-    .features{margin:25px 0}
-    .features li{list-style:none;margin:12px 0;font-size:16px;padding-right:32px;position:relative;line-height:1.5}
-    .features li:before{content:"✓";position:absolute;right:0;color:var(--green);font-weight:bold;font-size:22px}
-    .btn{display:block;padding:18px;font-size:20px;font-weight:900;border:none;border-radius:16px;text-decoration:none;text-align:center;margin:12px 0;transition:.2s}
-    .btn-call{background:linear-gradient(45deg,var(--blue),#0051D5);color:#fff;box-shadow:0 8px 25px rgba(0,122,255,.5)}
-    .btn-wa{background:linear-gradient(45deg,#25D366,#128C7E);color:#fff;box-shadow:0 8px 25px rgba(37,211,102,.4)}
-    .btn:active{transform:scale(.96)}
-    .float-call{position:fixed;bottom:20px;right:20px;background:var(--blue);color:white;width:65px;height:65px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:32px;box-shadow:0 5px 25px rgba(0,122,255,0.7);z-index:999;animation:bounce 2s infinite;text-decoration:none}
-    .float-wa{position:fixed;bottom:20px;left:20px;background:#25D366;color:white;width:65px;height:65px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:32px;box-shadow:0 5px 25px rgba(37,211,102,0.7);z-index:999;animation:bounce 2s infinite 1s;text-decoration:none}
+   .brand{font-size:18px;font-weight:900;color:var(--green);text-align:center;margin-bottom:10px}
+   .timer{background:linear-gradient(45deg,#ff3b30,#ff6b6b);padding:16px;border-radius:16px;text-align:center;font-weight:700;font-size:18px;margin:20px 0;box-shadow:0 8px 25px rgba(255,59,48,.4)}
+   .timer #time{font-size:26px;letter-spacing:2px}
+   .gallery{display:grid;gap:12px;margin:20px 0}
+   .gallery img{width:100%;border-radius:16px;border:2px solid var(--green);box-shadow:0 8px 25px rgba(0,255,136,0.25)}
+   .features{margin:25px 0}
+   .features li{list-style:none;margin:12px 0;font-size:16px;padding-right:32px;position:relative;line-height:1.5}
+   .features li:before{content:"✓";position:absolute;right:0;color:var(--green);font-weight:bold;font-size:22px}
+   .btn{display:block;padding:18px;font-size:20px;font-weight:900;border:none;border-radius:16px;text-decoration:none;text-align:center;margin:12px 0;transition:.2s}
+   .btn-call{background:linear-gradient(45deg,var(--blue),#0051D5);color:#fff;box-shadow:0 8px 25px rgba(0,122,255,.5)}
+   .btn-wa{background:linear-gradient(45deg,#25D366,#128C7E);color:#fff;box-shadow:0 8px 25px rgba(37,211,102,.4)}
+   .btn:active{transform:scale(.96)}
+   .float-call{position:fixed;bottom:20px;right:20px;background:var(--blue);color:white;width:65px;height:65px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:32px;box-shadow:0 5px 25px rgba(0,122,255,0.7);z-index:999;animation:bounce 2s infinite;text-decoration:none}
+   .float-wa{position:fixed;bottom:20px;left:20px;background:#25D366;color:white;width:65px;height:65px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:32px;box-shadow:0 5px 25px rgba(37,211,102,0.7);z-index:999;animation:bounce 2s infinite 1s;text-decoration:none}
         @keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
-    .review{background:rgba(255,255,255,0.05);padding:16px;margin-bottom:12px;border-radius:16px;border:1px solid rgba(255,255,255,0.1)}
-    .review b{display:block;margin-bottom:5px}
-    .stars{color:#FFD700;font-size:14px;margin-bottom:6px}
-    .review p{font-size:14px;opacity:.9}
-    .trust{display:flex;justify-content:space-around;font-size:14px;opacity:.8;font-weight:700;margin:25px 0}
-    .footer{text-align:center;padding:30px 20px 100px;font-size:12px;opacity:.6}
+   .review{background:rgba(255,255,255,0.05);padding:16px;margin-bottom:12px;border-radius:16px;border:1px solid rgba(255,255,255,0.1)}
+   .review b{display:block;margin-bottom:5px}
+   .stars{color:#FFD700;font-size:14px;margin-bottom:6px}
+   .review p{font-size:14px;opacity:.9}
+   .trust{display:flex;justify-content:space-around;font-size:14px;opacity:.8;font-weight:700;margin:25px 0}
+   .footer{text-align:center;padding:30px 20px 100px;font-size:12px;opacity:.6}
     </style>
 
     <!-- TikTok Pixel Code Start -->
@@ -63,24 +65,25 @@
 <body>
     <div class="container">
         <div style="text-align:center">
-            <div class="badge">🔥 عرض اليوم الوطني</div>
-            <h1>الخزانة الحديثة<br>خصم 50% + تركيب مجاني</h1>
+            <div class="badge">🔥 عرض حصري</div>
+            <div class="brand">الخزانة الحديثة</div>
+            <h1>خصم 50% لفترة محدودة<br>+ تركيب مجاني بالرياض</h1>
         </div>
 
         <div class="timer">⚠️ العرض ينتهي خلال: <span id="time">14:59</span></div>
 
         <div class="gallery">
-            <img src="photo8785746634565599727.jpeg" alt="خزانة ملابس فاخرة بإنارة" loading="lazy">
-            <img src="photo129425644708359950.jpeg" alt="خزانة زجاج مودرن" loading="lazy">
-            <img src="photo7253209267399487414.jpeg" alt="خزانة سحاب مع مراية" loading="lazy">
-            <img src="photo5047428584193205034.jpeg" alt="تسريحة بإضاءة ليد" loading="lazy">
+            <img src="photo8785746634565599727.jpeg" alt="خزانة ملابس فاخرة بإنارة من الخزانة الحديثة" loading="lazy">
+            <img src="photo129425644708359950.jpeg" alt="خزانة زجاج مودرن من الخزانة الحديثة" loading="lazy">
+            <img src="photo7253209267399487414.jpeg" alt="خزانة سحاب مع مراية من الخزانة الحديثة" loading="lazy">
+            <img src="photo5047428584193205034.jpeg" alt="تسريحة بإضاءة ليد من الخزانة الحديثة" loading="lazy">
         </div>
 
         <a href="tel:966510804566" class="btn btn-call" onclick="ttq.track('Contact',{content_type:'call'})">
             📞 اتصل الآن: 0510804566
         </a>
-        <a href="https://wa.me/966510804566?text=أبغى+عرض+الخزائن+50%25" class="btn btn-wa" onclick="ttq.track('Contact',{content_type:'whatsapp'})">
-            💬 واتساب - نرد خلال دقيقة
+        <a href="https://wa.me/966510804566?text=أبغى+عرض+الخزانة+الحديثة+50%25" class="btn btn-wa" onclick="ttq.track('Contact',{content_type:'whatsapp'})">
+            💬 واتساب الخزانة الحديثة
         </a>
 
         <h2>ليش الخزانة الحديثة؟</h2>
@@ -92,7 +95,7 @@
             <li>أكثر من 40 لون وملمس تختار منها</li>
         </ul>
 
-        <h2>آراء عملاءنا بالرياض ⭐ 4.9/5</h2>
+        <h2>آراء عملاء الخزانة الحديثة ⭐ 4.9/5</h2>
         <div class="review">
             <b>فهد المطيري - حي النرجس</b>
             <div class="stars">⭐⭐⭐⭐⭐</div>
@@ -110,7 +113,7 @@
             <span>🛡️ ضمان 10 سنوات</span>
         </div>
 
-        <a href="https://wa.me/966510804566?text=أبغى+معاينة+مجانية" class="btn btn-wa" onclick="ttq.track('Lead',{content_name:'معاينة'})">
+        <a href="https://wa.me/966510804566?text=أبغى+معاينة+مجانية+من+الخزانة+الحديثة" class="btn btn-wa" onclick="ttq.track('Lead',{content_name:'معاينة'})">
             📐 احجز معاينة مجانية الآن
         </a>
     </div>
