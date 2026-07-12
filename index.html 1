@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -20,9 +21,135 @@
         }
         *{margin:0;padding:0;box-sizing:border-box}
         body{font-family:'Cairo',sans-serif;background:var(--dark);color:#fff;padding-bottom:90px}
-      .container{max-width:480px;margin:0 auto;padding:20px}
-      .badge{background:var(--red);display:inline-block;padding:8px 20px;border-radius:50px;font-weight:700;font-size:14px;animation:pulse 2s infinite;margin-bottom:12px}
+    .container{max-width:480px;margin:0 auto;padding:20px}
+    .badge{background:var(--red);display:inline-block;padding:8px 20px;border-radius:50px;font-weight:700;font-size:14px;animation:pulse 2s infinite;margin-bottom:12px}
         @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
         h1{font-size:30px;font-weight:900;line-height:1.2;background:linear-gradient(90deg,#fff,var(--green));-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin:15px 0;text-align:center}
         h2{font-size:22px;font-weight:700;margin:25px 0 15px;color:var(--green);text-align:center}
-      .timer{background:linear-gradient(45deg,#ff3b30,#ff6b6b);
+    .timer{background:linear-gradient(45deg,#ff3b30,#ff6b6b);padding:16px;border-radius:16px;text-align:center;font-weight:700;font-size:18px;margin:20px 0;box-shadow:0 8px 25px rgba(255,59,48,.4)}
+    .timer #time{font-size:26px;letter-spacing:2px}
+    .gallery{display:grid;gap:12px;margin:20px 0}
+    .gallery img{width:100%;border-radius:16px;border:2px solid var(--green);box-shadow:0 8px 25px rgba(0,255,136,0.25)}
+    .features{margin:25px 0}
+    .features li{list-style:none;margin:12px 0;font-size:16px;padding-right:32px;position:relative;line-height:1.5}
+    .features li:before{content:"✓";position:absolute;right:0;color:var(--green);font-weight:bold;font-size:22px}
+    .btn{display:block;padding:18px;font-size:20px;font-weight:900;border:none;border-radius:16px;text-decoration:none;text-align:center;margin:12px 0;transition:.2s}
+    .btn-call{background:linear-gradient(45deg,var(--blue),#0051D5);color:#fff;box-shadow:0 8px 25px rgba(0,122,255,.5)}
+    .btn-wa{background:linear-gradient(45deg,#25D366,#128C7E);color:#fff;box-shadow:0 8px 25px rgba(37,211,102,.4)}
+    .btn:active{transform:scale(.96)}
+    .float-call{position:fixed;bottom:20px;right:20px;background:var(--blue);color:white;width:65px;height:65px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:32px;box-shadow:0 5px 25px rgba(0,122,255,0.7);z-index:999;animation:bounce 2s infinite;text-decoration:none}
+    .float-wa{position:fixed;bottom:20px;left:20px;background:#25D366;color:white;width:65px;height:65px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:32px;box-shadow:0 5px 25px rgba(37,211,102,0.7);z-index:999;animation:bounce 2s infinite 1s;text-decoration:none}
+        @keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+    .review{background:rgba(255,255,255,0.05);padding:16px;margin-bottom:12px;border-radius:16px;border:1px solid rgba(255,255,255,0.1)}
+    .review b{display:block;margin-bottom:5px}
+    .stars{color:#FFD700;font-size:14px;margin-bottom:6px}
+    .review p{font-size:14px;opacity:.9}
+    .trust{display:flex;justify-content:space-around;font-size:14px;opacity:.8;font-weight:700;margin:25px 0}
+    .footer{text-align:center;padding:30px 20px 100px;font-size:12px;opacity:.6}
+    </style>
+
+    <!-- TikTok Pixel Code Start -->
+    <script>
+!function (w, d, t) {
+      w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+    var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+    ;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+      ttq.load('D3J0NRJC77U7N8C5V2IG');
+      ttq.page();
+    }(window, document, 'ttq');
+    </script>
+    <!-- TikTok Pixel Code End -->
+</head>
+<body>
+    <div class="container">
+        <div style="text-align:center">
+            <div class="badge">🔥 عرض اليوم الوطني</div>
+            <h1>الخزانة الحديثة<br>خصم 50% + تركيب مجاني</h1>
+        </div>
+
+        <div class="timer">⚠️ العرض ينتهي خلال: <span id="time">14:59</span></div>
+
+        <div class="gallery">
+            <img src="photo8785746634565599727.jpeg" alt="خزانة ملابس فاخرة بإنارة" loading="lazy">
+            <img src="photo129425644708359950.jpeg" alt="خزانة زجاج مودرن" loading="lazy">
+            <img src="photo7253209267399487414.jpeg" alt="خزانة سحاب مع مراية" loading="lazy">
+            <img src="photo5047428584193205034.jpeg" alt="تسريحة بإضاءة ليد" loading="lazy">
+        </div>
+
+        <a href="tel:966510804566" class="btn btn-call" onclick="ttq.track('Contact',{content_type:'call'})">
+            📞 اتصل الآن: 0510804566
+        </a>
+        <a href="https://wa.me/966510804566?text=أبغى+عرض+الخزائن+50%25" class="btn btn-wa" onclick="ttq.track('Contact',{content_type:'whatsapp'})">
+            💬 واتساب - نرد خلال دقيقة
+        </a>
+
+        <h2>ليش الخزانة الحديثة؟</h2>
+        <ul class="features">
+            <li>ضمان 10 سنوات على الخشب والأكسسوار الإيطالي</li>
+            <li>نرفع المقاسات + تصميم 3D مجاني قبل التنفيذ</li>
+            <li>تركيب بالرياض خلال 48 ساعة من بعد التأكيد</li>
+            <li>مفصلات سوفت كلوز وإضاءة LED داخلية هدية</li>
+            <li>أكثر من 40 لون وملمس تختار منها</li>
+        </ul>
+
+        <h2>آراء عملاءنا بالرياض ⭐ 4.9/5</h2>
+        <div class="review">
+            <b>فهد المطيري - حي النرجس</b>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>والله شغل ممتاز وتعامل راقي. فصلت عندهم خزانة 4 متر واستلمتها في يومين نفس التصميم بالضبط.</p>
+        </div>
+        <div class="review">
+            <b>أم نايف - حي الملقا</b>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>السعر بعد الخصم صار معقول مرة. والخامة ثقيلة ما هي خشب مضغوط. الله يرزقهم</p>
+        </div>
+
+        <div class="trust">
+            <span>🏆 +1200 عميل</span>
+            <span>🚚 تركيب اليوم</span>
+            <span>🛡️ ضمان 10 سنوات</span>
+        </div>
+
+        <a href="https://wa.me/966510804566?text=أبغى+معاينة+مجانية" class="btn btn-wa" onclick="ttq.track('Lead',{content_name:'معاينة'})">
+            📐 احجز معاينة مجانية الآن
+        </a>
+    </div>
+
+    <!-- الأزرار العائمة -->
+    <a href="tel:966510804566" class="float-call" onclick="ttq.track('Contact',{content_name:'زر عائم اتصال'})">📞</a>
+    <a href="https://wa.me/966510804566" class="float-wa" onclick="ttq.track('Contact',{content_name:'زر عائم واتساب'})">💬</a>
+
+    <div class="footer">
+        الخزانة الحديثة © 2026 - الرياض | للطلب: 0510804566
+    </div>
+
+    <script>
+    function startTimer(duration, display) {
+        let timer = duration, minutes, seconds;
+        setInterval(function () {
+            minutes = parseInt(timer / 60, 10);
+            seconds = parseInt(timer % 60, 10);
+            display.textContent = minutes + ":" + (seconds < 10? "0" : "") + seconds;
+            if (--timer < 0) timer = duration;
+        }, 1000);
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        let fifteenMinutes = 60 * 15,
+            display = document.querySelector('#time');
+        if(display) startTimer(fifteenMinutes, display);
+
+        ttq.track('ViewContent',{content_name:'صفحة الخزانة الحديثة', value:1, currency:'SAR'});
+
+        let sent50 = false;
+        window.addEventListener('scroll', function(){
+            let scrollPercent = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+            if(scrollPercent > 50 &&!sent50){
+                ttq.track('Scroll', {percent: 50});
+                sent50 = true;
+            }
+        });
+    });
+    </script>
+</body>
+</html>
