@@ -66,7 +66,7 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
       w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
     var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
     ;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
-      ttq.load('D3J0NRJC77U7N8C5V2IG');
+      ttq.load(D9A2EEJC77UBS5FSA5J0);
       ttq.page();
     }(window, document, 'ttq');
     </script>
@@ -109,7 +109,12 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
             <li>مفصلات سوفت كلوز وإضاءة LED داخلية هدية</li>
             <li>أكثر من 40 لون وملمس تختار منها</li>
         </ul>
-
+document.querySelectorAll('a[href^="tel:"], a[href*="wa.me"]').forEach(btn=>{
+      btn.addEventListener('click',()=>{
+        ttq.track('ClickButton');
+        ttq.track('Contact');
+      });
+    });
         <h2>آراء عملاء الخزانة الحديثة ⭐ 4.9/5</h2>
         <div class="review">
             <b>فهد المطيري - حي النرجس</b>
